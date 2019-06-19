@@ -10,6 +10,9 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    FILE *fp = fopen("singer.txt","w");
+    if(fp == NULL){
+        printf("Failed to open file");
+        return 0;
+    }
 }
