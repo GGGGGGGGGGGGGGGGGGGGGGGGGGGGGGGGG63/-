@@ -10,13 +10,10 @@
     
     int main(int argc, const char * argv[]) {
         // insert code here...
-        static signed int i=0xAABBCCDD;
+        static signed int i=5;
         char *p;
         int j=10;
         p=(char *)&i;
-        printf("p=%x\n",p);
-        printf("&i=%x\n",&i);
-        printf("*(p+3)=%x\n",*(p+3));
-        printf("*p=%x\n",*p);
+        printf("sum=%d\n",i+j);
         return 0;
     }
