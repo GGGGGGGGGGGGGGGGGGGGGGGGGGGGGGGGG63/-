@@ -7,15 +7,17 @@
 //
 
 #include <stdio.h>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    FILE *fp;
-    fp=fopen("我的文档.txt","w+");
-    fprintf( fp ,"文件内容");//这句话就可以往文件里写入数据
-    fclose(fp);
-    /*if(fp == NULL){
-        printf("Failed to open file");
-        return 0;*/
-    return 0;
+    
+    int main(int argc, const char * argv[]) {
+        // insert code here...
+        int *p;
+        int i;
+        p=&i;
+        *p=100;
+        printf("p=%x\n",p);
+        printf("&p=%x\n",&p);
+        printf("*p=%x\n",*p);
+        printf("i=%x\n",i);
+        printf("&i=%x\n",&i);
+        return 0;
     }
